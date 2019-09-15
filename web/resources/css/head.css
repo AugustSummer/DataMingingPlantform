@@ -1,0 +1,25 @@
+.headerBox{
+    height: 90px;
+    width: 1500px;
+    background-color: white;
+}
+
+.headerBox.left{
+    height: 90px;
+    width: 200px;
+    left: 0;
+    background-color:red;
+}
+
+.headerBox.center{
+    height: 90px;
+    width: 1000px;
+    background-color: aqua;
+}
+
+.headerBox.right{
+    height: 90px;
+    width: 300px;
+    right: 0;
+    background-color: blueviolet;
+}

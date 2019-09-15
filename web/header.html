@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>导航栏</title>
+    <style type="text/css">
+       .headBox{
+           height: 80px;
+           width: 100%;
+           margin-left: 0;
+           position: fixed;
+           top: 0;
+           margin-bottom: 5px;
+           display: -webkit-flex;
+           display: flex;
+       }
+       .headBox .logo{
+            height: 80px;
+            width: 10%;
+            padding: 0 20px 0 20px;
+        }
+       .headBox .center{
+            height: 80px;
+            width: 75%;
+            top: 0;
+        }
+        .center ul{
+            width: 100%;
+            list-style-type: none;
+            white-space: nowrap;
+            overflow: hidden;
+            margin-left: 4%;
+            padding: 0px;
+        }
+        .center li{
+            width: 10%;
+            float: left;/*横向排列*/
+            margin-right: 4%;
+            margin-top: 10px;
+            position: relative;
+            overflow: hidden;
+        }
+        .center li a{
+            display: block;
+            color: #1526ff;
+            text-align: center;
+            padding: 3px;
+            overflow: hidden;
+            text-decoration: none;/*去除下划线*/
+            font-family: 宋体;
+            font-size: 25px;
+        }
+        .center li a:hover{
+            background-color: #fdffca;
+        }
+
+       .headBox .right{
+            height: 80px;
+            width: 15%;
+            margin-right: 50px;
+            top: 0;
+            right: 0;
+        }
+        .right ul{
+            width: 100%;
+            list-style-type: none;
+            white-space: nowrap;
+            overflow: hidden;
+            margin-left: 4%;
+            padding: 0px;
+        }
+
+        .right li{
+            width: auto;
+            float: left;/*横向排列*/
+            margin-right: 4%;
+            margin-top: 12px;
+            position: relative;
+            overflow: hidden;
+        }
+        .right li a{
+            display: block;
+            color: #1526ff;
+            text-align: center;
+            padding: 2px;
+            overflow: hidden;
+            text-decoration: none;/*去除下划线*/
+            font-family: 宋体;
+            font-size: 20px;
+        }
+        .right li a:hover{
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <div class="headBox">
+        <div class="logo">
+            <img src="resources/images/header/logo.png" style="height: 60px;width: 60px;margin-top: 10px">
+        </div>
+        <div class="center">
+            <ul>
+                <li>
+                    <a href="#">首页</a>
+                </li>
+                <li>
+                    <a href="#">实验</a>
+                </li>
+                <li>
+                    <a href="#">资料</a>
+                </li>
+                <li>
+                    <a href="#">作业</a>
+                </li>
+                <li>
+                    <a href="#">论坛</a>
+                </li>
+                <li>
+                    <a href="#">咨询</a>
+                </li>
+            </ul>
+        </div>
+        <div class="right">
+                <ul>
+                    <li>
+                        <a>个人中心</a>
+                    </li>
+                    <li>
+                        <a>登出</a>
+                    </li>
+                </ul>
+        </div>
+    </div>
+</body>
+</html>
